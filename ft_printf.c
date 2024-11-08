@@ -43,6 +43,8 @@ int	ft_printf(const char *format, ...)
 
 	va_start(args, format);
 	count = 0;
+	if (write(1, 0, 0) == -1)
+		return (-1);
 	while (*format)
 	{
 		if (*format == '%')
