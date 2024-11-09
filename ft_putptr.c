@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static int	ft_putptr(uintptr_t n)
+static int	ft_putptr(unsigned long n)
 {
 	int		count;
 	char	*sym;
@@ -32,10 +32,12 @@ static int	ft_putptr(uintptr_t n)
 	}
 }
 
-int	put_ptr(uintptr_t ptr)
+int	put_ptr(void *ptr)
 {
 	int	count;
+	unsigned long n;
 
+	n = (unsigned long) ptr;
 	count = 0;
 	count += put_str("0x");
 	if (ptr == 0)
