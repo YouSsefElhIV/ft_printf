@@ -32,7 +32,7 @@ int	cases_printing(char form, va_list ap)
 	else if (form == 'u')
 		count += ft_putnbr((long)va_arg(ap, unsigned int), 10, 0);
 	else if (form == 'p')
-		count += put_ptr(va_arg(ap, uintptr_t));
+		count += put_ptr(va_arg(ap, void *));
 	return (count);
 }
 
