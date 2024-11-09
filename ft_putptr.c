@@ -43,6 +43,6 @@ int	put_ptr(void *ptr)
 	if (ptr == 0)
 		count += put_char('0');
 	else
-		count += ft_putptr(ptr);
+		count += ft_putptr(n);
 	return (count);
 }
