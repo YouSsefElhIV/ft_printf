@@ -34,8 +34,8 @@ static int	ft_putptr(unsigned long n)
 
 int	put_ptr(void *ptr)
 {
-	int	count;
-	unsigned long n;
+	int		count;
+	unsigned long	n;
 
 	n = (unsigned long) ptr;
 	count = 0;
